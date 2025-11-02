@@ -2,11 +2,17 @@
 
 Multi-environment autonomous navigation system with real-time SLAM mapping and intelligent path planning.
 
-## 🎥 Demo: House Environment Navigation
+## 🎥 Demonstrations
 
+### House Environment
 ![House Navigation](media/house/house_navigation.gif)
 
-*Robot autonomously navigating through residential environment, avoiding furniture and traversing multiple rooms*
+*Multi-room autonomous navigation in residential environment*
+
+### Warehouse Environment  
+![Warehouse Demo](media/warehouse/warehouse_demo.gif)
+
+*Industrial warehouse navigation with obstacle avoidance*
 
 ## 🎯 Overview
 Autonomous mobile robot navigation system built with ROS2 Humble, featuring real-time SLAM mapping, autonomous path planning, and dynamic obstacle avoidance. Successfully tested in complex indoor environments including residential and warehouse settings.
