@@ -192,8 +192,8 @@ Built as part of robotics portfolio development. Demonstrates computer vision an
 Robotics Software Engineer
 
 - GitHub: [@Fakhar-Bashar](https://github.com/Fakhar-Bashar)
-- LinkedIn: [Add your link]
-- Email: your.email@example.com
+- LinkedIn: https://www.linkedin.com/in/muhammad-fakhar-ul-bashar-4494641b7/
+- Email: fbqazi786@gmail.com
 - Location: Kaiserslautern, Germany
 
 ---
