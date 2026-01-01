@@ -1,215 +1,222 @@
-# Autonomous Navigation Robot - ROS2
+# ROS2 Robotics Portfolio
 
-Multi-environment autonomous navigation system with real-time SLAM mapping and intelligent path planning.
+Professional robotics software engineering projects demonstrating autonomous systems, computer vision, and navigation capabilities.
 
-## 🎥 Demonstrations
-
-### House Environment
-![House Navigation](media/house/house_navigation.gif)
-
-*Multi-room autonomous navigation in residential environment*
-
-### Warehouse Environment  
-![Warehouse Demo](media/warehouse/warehouse_demo.gif)
-
-*Industrial warehouse navigation with obstacle avoidance*
-
-## 🎯 Overview
-Autonomous mobile robot navigation system built with ROS2 Humble, featuring real-time SLAM mapping, autonomous path planning, and dynamic obstacle avoidance. Successfully tested in complex indoor environments including residential and warehouse settings.
-
-## ✨ Key Features
-- **🗺️ Real-time SLAM Mapping** - Simultaneous Localization and Mapping using SLAM Toolbox
-- **🎯 Autonomous Navigation** - Goal-based navigation with Nav2 stack
-- **🏠 Multi-Environment Support** - Tested in house and warehouse scenarios
-- **🚧 Dynamic Obstacle Avoidance** - Real-time collision prevention
-- **🚪 Multi-Room Navigation** - Complex indoor environment traversal
-- **💻 Programmatic Control** - Python API for autonomous missions
-- **📍 Multi-Waypoint Planning** - Sequential goal achievement
-- **📊 Real-time Visualization** - RViz monitoring and debugging
-
-## 🛠️ Technology Stack
-
-**Core Technologies:**
-- ROS2 Humble
-- Nav2 Navigation Stack
-- SLAM Toolbox
-- Gazebo 11
-- Python 3.10
-- Ubuntu 22.04
-
-**Key Algorithms:**
-- SLAM for mapping and localization
-- A* / Dijkstra for global path planning
-- DWA (Dynamic Window Approach) for local planning
-- Costmap-based obstacle representation
-
-## 🚀 Quick Start
-
-### Prerequisites
-```bash
-# Ubuntu 22.04 with ROS2 Humble
-sudo apt update
-sudo apt install ros-humble-desktop
-```
-
-### Installation
-```bash
-# Install dependencies
-sudo apt install ros-humble-navigation2 \
-                 ros-humble-nav2-bringup \
-                 ros-humble-slam-toolbox \
-                 ros-humble-turtlebot3-gazebo \
-                 ros-humble-turtlebot3-navigation2
-
-# Set TurtleBot3 model
-echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
-source ~/.bashrc
-
-# Clone repository
-cd ~/ros2_ws/src
-git clone https://github.com/Fakhar-Bashar/autonomous-navigation-ros2.git
-cd ~/ros2_ws
-colcon build
-source install/setup.bash
-```
-
-## 📖 Usage
-
-### House Environment
-
-#### Step 1: Launch Simulation
-```bash
-ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
-```
-
-#### Step 2: Launch Navigation (in new terminal)
-```bash
-ros2 launch turtlebot3_navigation2 navigation2.launch.py \
-    use_sim_time:=True \
-    map:=$(pwd)/maps/house/house_map.yaml
-```
-
-#### Step 3: Navigate in RViz
-1. **Set Initial Pose:** Click "2D Pose Estimate" and place on map
-2. **Send Goal:** Click "Nav2 Goal" and select destination
-3. **Watch:** Robot navigates autonomously!
-
-### Building New Maps (SLAM)
-```bash
-# Terminal 1: Launch environment
-ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
-
-# Terminal 2: Start SLAM
-ros2 launch slam_toolbox online_async_launch.py
-
-# Terminal 3: Visualize
-rviz2
-
-# Terminal 4: Manual control
-ros2 run turtlebot3_teleop teleop_keyboard
-
-# Terminal 5: Save map after exploring
-cd ~/maps
-ros2 run nav2_map_server map_saver_cli -f my_map
-```
-
-## 📊 Performance
-
-| Metric | House Environment |
-|--------|-------------------|
-| Map Build Time | ~3 minutes |
-| Navigation Success Rate | 95%+ |
-| Avg Path Planning Time | 0.4s |
-| Obstacle Detection Range | 3.5m |
-| Replanning Speed | Real-time |
-
-## 🎓 Technical Skills Demonstrated
-
-**ROS2 Expertise:**
-- Node architecture and communication
-- Topics, services, and actions
-- Launch file configuration
-- Parameter management
-
-**Navigation & Planning:**
-- SLAM algorithms
-- A* path planning
-- Dynamic Window Approach
-- Costmap generation
-- TF coordinate transformations
-
-**Robotics Fundamentals:**
-- Sensor fusion (LIDAR, odometry, IMU)
-- Motion control
-- Localization techniques
-- Obstacle avoidance
-
-**Software Engineering:**
-- Python/C++ development
-- Git version control
-- Documentation
-- System integration
-
-## 📁 Repository Structure
-```
-autonomous-navigation-ros2/
-├── maps/
-│   └── house/
-│       ├── house_map.yaml
-│       └── house_map.pgm
-├── media/
-│   └── house/
-│       ├── house_navigation.gif
-│       └── house_navigation.mp4
-├── src/
-├── launch/
-├── config/
-├── docs/
-└── README.md
-```
-
-## 🔮 Future Enhancements
-- [ ] Multi-robot fleet coordination
-- [ ] 3D navigation (multi-floor)
-- [ ] Voice command interface
-- [ ] Machine learning path optimization
-- [ ] Deployment on physical TurtleBot3
-- [ ] Integration with real sensors
-- [ ] Custom world creation
-
-## 📈 Development Journey
-
-**Week 1:** SLAM implementation and mapping
-**Week 2:** Autonomous navigation and path planning
-**Week 3:** Multi-environment testing and optimization
-
-## 🎯 Project Goals Achieved
-- ✅ Real-time SLAM mapping
-- ✅ Autonomous goal-based navigation
-- ✅ Dynamic obstacle avoidance
-- ✅ Multi-environment testing
-- ✅ Professional documentation
-- ✅ Demo videos and visualization
-
-## 🤝 Collaboration
-Developed in collaboration with [Mansi Gagaliya](https://github.com/Mansi-Gagaliya)
-
-## 📧 Contact
-
-**Fakhar Bashar**  
-Robotics Software Engineer
-
-- 🔗 GitHub: [@Fakhar-Bashar](https://github.com/Fakhar-Bashar)
-- 💼 LinkedIn: https://www.linkedin.com/in/muhammad-fakhar-ul-bashar-4494641b7/
-- 📧 Email: fbqazi786@gmail.com
-- 📍 Location: Kaiserslautern, Germany
-- 🎯 **Open to robotics/autonomous systems opportunities in Germany**
-
-## 📝 License
-MIT License
+> 🎯 **Seeking robotics software engineering opportunities in Germany**
 
 ---
 
-### 🌟 If you find this project useful, please star this repository!
+## 🚀 Featured Projects
 
-**Tags:** `ros2` `robotics` `autonomous-navigation` `slam` `path-planning` `gazebo` `python` `cpp` `nav2` `mobile-robotics`
+### 1. Autonomous Navigation Robot with SLAM
+![Navigation Demo](media/house/house_navigation.gif)
+
+**Multi-environment autonomous mobile robot with real-time mapping and path planning**
+
+**Key Features:**
+- ✅ Real-time SLAM mapping with SLAM Toolbox
+- ✅ Autonomous navigation using Nav2 stack
+- ✅ Dynamic obstacle avoidance
+- ✅ Multi-room path planning
+- ✅ Tested in residential and warehouse environments
+
+**Technologies:** ROS2 Humble • Navigation2 • SLAM Toolbox • Gazebo • Python • C++
+
+**[📂 View Project Details →](docs/navigation_project.md)**
+
+---
+
+### 2. Computer Vision Line Following Robot
+![Line Follower](media/line_follower/line_follower_demo.gif)
+
+**Vision-based autonomous path following with real-time image processing**
+
+**Key Features:**
+- ✅ Real-time line detection at 30 Hz
+- ✅ OpenCV image processing pipeline
+- ✅ Proportional feedback control
+- ✅ Handles curved and straight paths
+- ✅ Continuous autonomous operation
+
+**Technologies:** ROS2 • OpenCV • cv_bridge • Python • Computer Vision
+
+**[📂 View Project Details →](docs/line_follower_project.md)**
+
+---
+
+## 💻 Technical Skills
+
+### Robotics & Autonomous Systems
+- **ROS2 Development:** Nodes, Topics, Services, Actions, Launch Files
+- **Navigation:** SLAM, Localization (AMCL), Path Planning (A*, DWA)
+- **Computer Vision:** OpenCV, Image Processing, Real-time Detection
+- **Control Systems:** Proportional Control, Feedback Loops, Parameter Tuning
+- **Sensor Fusion:** LIDAR, Camera, IMU, Wheel Odometry
+
+### Programming & Tools
+- **Languages:** Python (Primary), C++ (Familiar)
+- **Frameworks:** ROS2 Humble, Navigation2, OpenCV
+- **Simulation:** Gazebo 11
+- **Version Control:** Git, GitHub
+- **OS:** Ubuntu 22.04, Linux
+
+### Algorithms Implemented
+- Simultaneous Localization and Mapping (SLAM)
+- A* Global Path Planning
+- Dynamic Window Approach (DWA) Local Planning
+- Image Thresholding and Contour Detection
+- Proportional Control Systems
+- Costmap-based Obstacle Representation
+
+---
+
+## 📊 Portfolio Statistics
+
+| Metric | Value |
+|--------|-------|
+| Complete Projects | 2 |
+| Total Code Lines | 1,000+ |
+| Sensors Integrated | 4 (Camera, LIDAR, IMU, Odometry) |
+| Environments Tested | 3 (House, Warehouse, Track) |
+| Processing Rate | 30 Hz (real-time) |
+| Success Rate | 95%+ |
+
+---
+
+## 🎯 About Me
+
+Robotics software engineer with hands-on experience in autonomous navigation, computer vision, and mobile robot control. Passionate about building intelligent systems that solve real-world problems.
+
+**🔧 What I Bring:**
+- Strong foundation in ROS2 and autonomous systems
+- Practical computer vision implementation skills
+- Understanding of control theory and sensor fusion
+- Ability to learn quickly and solve complex problems
+- Clean, documented code with best practices
+
+**📍 Location:** Kaiserslautern, Germany  
+**💼 Status:** Actively seeking robotics software engineering roles  
+**🌍 Work Authorization:** EU
+
+---
+
+## 🚀 Quick Start
+
+### Clone Repository
+```bash
+git clone https://github.com/Fakhar-Bashar/autonomous-navigation-ros2.git
+cd autonomous-navigation-ros2
+```
+
+### Setup Environment
+```bash
+# Ensure ROS2 Humble is installed
+source /opt/ros/humble/setup.bash
+
+# Build workspace
+colcon build --symlink-install
+source install/setup.bash
+```
+
+### Run Navigation Demo
+```bash
+export TURTLEBOT3_MODEL=waffle
+ros2 launch turtlebot3_navigation2 navigation2.launch.py \
+    use_sim_time:=True \
+    map:=./maps/house/house_map.yaml
+```
+
+### Run Line Follower Demo
+```bash
+export TURTLEBOT3_MODEL=waffle
+ros2 launch line_follower_pkg professional_track.launch.py
+ros2 run line_follower_pkg line_follower
+```
+
+---
+
+## 📂 Repository Structure
+```
+autonomous-navigation-ros2/
+├── docs/                          # Project documentation
+│   ├── navigation_project.md
+│   └── line_follower_project.md
+├── media/                         # Demo videos and images
+│   ├── house/
+│   ├── warehouse/
+│   └── line_follower/
+├── maps/                          # SLAM-generated maps
+│   ├── house/
+│   └── warehouse/
+└── README.md                      # This file
+```
+
+---
+
+## 📹 Demo Videos
+
+**Navigation System:**
+- [House Environment Navigation](media/house/house_navigation.mp4)
+- [Warehouse Navigation](media/warehouse/warehouse_demo.mp4)
+
+**Line Following:**
+- [Continuous Track Following](media/line_follower/line_follower_demo.mp4)
+
+---
+
+## 🎓 Learning Journey
+
+These projects represent my journey in robotics development:
+
+**Phase 1:** Understanding ROS2 fundamentals  
+**Phase 2:** Implementing SLAM and navigation  
+**Phase 3:** Adding computer vision capabilities  
+**Phase 4:** System integration and optimization  
+
+**Key Takeaways:**
+- Real-time systems require careful optimization
+- Parameter tuning is crucial for robot performance
+- Simulation accelerates development and testing
+- Clean architecture enables easier debugging
+- Documentation is essential for maintainability
+
+---
+
+## 🤝 Connect With Me
+
+**📧 Email:** fbqazi786@gmail.com  
+**💼 LinkedIn:** https://www.linkedin.com/in/muhammad-fakhar-ul-bashar-4494641b7/  
+**🐙 GitHub:** [@Fakhar-Bashar](https://github.com/Fakhar-Bashar)  
+**📍 Location:** Kaiserslautern, Germany
+
+---
+
+## 📝 License
+
+MIT License - Feel free to learn from this code!
+
+---
+
+## 🌟 Acknowledgments
+
+Built as part of my robotics software engineering portfolio. These projects demonstrate practical skills in:
+- Warehouse automation and AGV navigation
+- Industrial line tracking systems
+- Autonomous mobile robotics
+- Computer vision for robotics
+
+**Applicable Industries:** Warehouse Automation • Industrial Robotics • Autonomous Vehicles • Service Robotics
+
+---
+
+<div align="center">
+
+### ⭐ If you find this repository helpful, please star it!
+
+**Open to robotics software engineering opportunities in Germany** 🇩🇪
+
+</div>
+
+---
+
+**Tags:** `ros2` `robotics` `autonomous-navigation` `slam` `computer-vision` `opencv` `python` `mobile-robotics` `path-planning` `gazebo` `navigation2`
