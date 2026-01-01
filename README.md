@@ -2,8 +2,6 @@
 
 Professional robotics software engineering projects demonstrating autonomous systems, computer vision, and navigation capabilities.
 
-> 🎯 **Seeking robotics software engineering opportunities in Germany**
-
 ---
 
 ## 🚀 Featured Projects
@@ -83,20 +81,18 @@ Professional robotics software engineering projects demonstrating autonomous sys
 
 ---
 
-## 🎯 About Me
+## 🎯 About
 
-Robotics software engineer with hands-on experience in autonomous navigation, computer vision, and mobile robot control. Passionate about building intelligent systems that solve real-world problems.
+Robotics software engineering portfolio showcasing hands-on experience in autonomous navigation, computer vision, and mobile robot control.
 
-**🔧 What I Bring:**
-- Strong foundation in ROS2 and autonomous systems
-- Practical computer vision implementation skills
-- Understanding of control theory and sensor fusion
-- Ability to learn quickly and solve complex problems
-- Clean, documented code with best practices
+**Technical Focus:**
+- Autonomous mobile robotics
+- Real-time computer vision systems
+- Sensor fusion and localization
+- Control theory implementation
+- Clean, documented code
 
-**📍 Location:** Kaiserslautern, Germany  
-**💼 Status:** Actively seeking robotics software engineering roles  
-**🌍 Work Authorization:** EU
+**Location:** Kaiserslautern, Germany
 
 ---
 
@@ -164,28 +160,28 @@ autonomous-navigation-ros2/
 
 ---
 
-## 🎓 Learning Journey
+## 🎓 Development Journey
 
-These projects represent my journey in robotics development:
+These projects represent practical implementation of robotics concepts:
 
-**Phase 1:** Understanding ROS2 fundamentals  
-**Phase 2:** Implementing SLAM and navigation  
-**Phase 3:** Adding computer vision capabilities  
-**Phase 4:** System integration and optimization  
+**Phase 1:** ROS2 fundamentals and system architecture  
+**Phase 2:** SLAM implementation and navigation stack integration  
+**Phase 3:** Computer vision and real-time processing  
+**Phase 4:** System optimization and parameter tuning  
 
-**Key Takeaways:**
-- Real-time systems require careful optimization
-- Parameter tuning is crucial for robot performance
+**Key Insights:**
+- Real-time systems require careful performance optimization
+- Parameter tuning significantly impacts robot behavior
 - Simulation accelerates development and testing
-- Clean architecture enables easier debugging
-- Documentation is essential for maintainability
+- Modular architecture enables easier debugging
+- Documentation ensures maintainability
 
 ---
 
-## 🤝 Connect With Me
+## 🤝 Connect
 
-**📧 Email:** fbqazi786@gmail.com  
-**💼 LinkedIn:** https://www.linkedin.com/in/muhammad-fakhar-ul-bashar-4494641b7/  
+**📧 Email:** [Your Email]  
+**💼 LinkedIn:** [Your LinkedIn Profile]  
 **🐙 GitHub:** [@Fakhar-Bashar](https://github.com/Fakhar-Bashar)  
 **📍 Location:** Kaiserslautern, Germany
 
@@ -197,23 +193,20 @@ MIT License - Feel free to learn from this code!
 
 ---
 
-## 🌟 Acknowledgments
+## 🌟 Applications
 
-Built as part of my robotics software engineering portfolio. These projects demonstrate practical skills in:
+These projects demonstrate practical skills applicable to:
 - Warehouse automation and AGV navigation
 - Industrial line tracking systems
 - Autonomous mobile robotics
+- Service robotics
 - Computer vision for robotics
-
-**Applicable Industries:** Warehouse Automation • Industrial Robotics • Autonomous Vehicles • Service Robotics
 
 ---
 
 <div align="center">
 
 ### ⭐ If you find this repository helpful, please star it!
-
-**Open to robotics software engineering opportunities in Germany** 🇩🇪
 
 </div>
 

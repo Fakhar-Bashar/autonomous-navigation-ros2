@@ -283,12 +283,9 @@ This project demonstrates skills applicable to:
 
 ## 📧 Contact
 
-**Fakhar Bashar**  
-Robotics Software Engineer
-
-GitHub: [@Fakhar-Bashar](https://github.com/Fakhar-Bashar)  
-Location: Kaiserslautern, Germany
-
+**Developer:** Fakhar Bashar  
+**GitHub:** [@Fakhar-Bashar](https://github.com/Fakhar-Bashar)  
+**Location:** Kaiserslautern, Germany
 ---
 
 [← Back to Portfolio](../README.md)
